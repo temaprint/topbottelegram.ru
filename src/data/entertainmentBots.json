@@ -1,0 +1,32 @@
+{
+  "entertainmentBots": [
+    {
+      "emoji": "🎬",
+      "name": "Киноман",
+      "link": "https://t.me/kinoman_bot",
+      "description": "Рекомендации фильмов, игры «Угадай кино» и «Правда или ложь».",
+      "users": 6878
+    },
+    {
+      "emoji": "🎭",
+      "name": "Стикольщик",
+      "link": "https://t.me/StickerStickyBot",
+      "description": "Подбирает стикеры по смыслу сообщения.",
+      "users": 6765
+    },
+    {
+      "emoji": "🎨",
+      "name": "Бот Геннадий",
+      "link": "https://t.me/botgenadiy_bot",
+      "description": "Инструменты для SMM: обрезка фото, фоны, идеи постов.",
+      "users": 21750
+    },
+    {
+      "emoji": "📊",
+      "name": "EGRUL_BOT",
+      "link": "https://t.me/EGRUL_BOT",
+      "description": "Данные о юрлицах, ИП, учредителях, ИНН и т.п.",
+      "users": 20230
+    }
+  ]
+}

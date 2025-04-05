@@ -1,0 +1,64 @@
+{
+  "usefulBots": [
+    {
+      "emoji": "🤖",
+      "name": "ChatGPT Bot",
+      "link": "https://t.me/ChatGPT_Telegram_Bot",
+      "description": "AI бот для общения и помощи с задачами"
+    },
+    {
+      "emoji": "⏰",
+      "name": "Skeddy",
+      "link": "https://t.me/SkeddyBot",
+      "description": "Напоминания и управление задачами через Telegram"
+    },
+    {
+      "emoji": "🔗",
+      "name": "IFTTT",
+      "link": "https://t.me/IFTTT",
+      "description": "Интеграция с внешними сервисами, автоматизация задач"
+    },
+    {
+      "emoji": "📊",
+      "name": "Combot",
+      "link": "https://t.me/combot",
+      "description": "Аналитика и управление Telegram-сообществами"
+    },
+    {
+      "emoji": "🗳",
+      "name": "VoteBot",
+      "link": "https://t.me/votebot",
+      "description": "Создание опросов и голосований"
+    },
+    {
+      "emoji": "🛠",
+      "name": "File Converter",
+      "link": "https://t.me/newfileconverterbot",
+      "description": "Конвертация файлов различных форматов"
+    },
+    {
+      "emoji": "🌤",
+      "name": "WeatherMan",
+      "link": "https://t.me/weatherman_bot",
+      "description": "Погодные прогнозы по заданному городу"
+    },
+    {
+      "emoji": "💰",
+      "name": "CryptoWhale",
+      "link": "https://t.me/CryptoWhaleBot",
+      "description": "Отслеживание курса криптовалют"
+    },
+    {
+      "emoji": "🔍",
+      "name": "URL Shortener",
+      "link": "https://t.me/shorturl_bot",
+      "description": "Сокращение ссылок"
+    },
+    {
+      "emoji": "🎮",
+      "name": "Gamee",
+      "link": "https://t.me/gamee",
+      "description": "Игры прямо в Telegram"
+    }
+  ]
+}

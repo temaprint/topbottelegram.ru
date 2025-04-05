@@ -1,0 +1,187 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import BotCard from '../components/BotCard.astro';
+import BotList from '../components/BotList.astro';
+
+import officialBotsData from '../data/officialBots.json';
+import utilityBotsData from '../data/utilityBots.json';
+import languageBotsData from '../data/languageBots.json';
+import datingBotsData from '../data/datingBots.json';
+import healthBotsData from '../data/healthBots.json';
+import stickerBotsData from '../data/stickerBots.json';
+import mediaBotsData from '../data/mediaBots.json';
+import chatBotsData from '../data/chatBots.json';
+import entertainmentBotsData from '../data/entertainmentBots.json';
+import gameBotsData from '../data/gameBots.json';
+import usefulBotsData from '../data/usefulBots.json';
+
+const { officialBots } = officialBotsData;
+const { utilityBots } = utilityBotsData;
+const { languageBots } = languageBotsData;
+const { datingBots } = datingBotsData;
+const { healthBots } = healthBotsData;
+const { stickerBots } = stickerBotsData;
+const { mediaBots } = mediaBotsData;
+const { chatBots } = chatBotsData;
+const { entertainmentBots } = entertainmentBotsData;
+const { gameBots } = gameBotsData;
+const { usefulBots } = usefulBotsData;
+---
+
+<Layout>
+  <Header />
+  <div class="container">
+    <h1>📚 Каталог Telegram-ботов</h1>
+
+    <section class="section">
+      <h2>📋 Полезные Telegram-боты ТОП 10</h2>
+      <BotList bots={usefulBots} />
+    </section>
+
+    <section class="section">
+      <h2>📧 Официальные боты сервисов</h2>
+      <div class="grid">
+        {officialBots.map((bot) => (
+          <BotCard {...bot} />
+        ))}
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🛠 Полезные боты</h2>
+      <div class="grid">
+        {utilityBots.map((bot) => (
+          <BotCard {...bot} />
+        ))}
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🌍 Боты для изучения языков</h2>
+      <div class="grid">
+        {languageBots.map((bot) => (
+          <BotCard {...bot} />
+        ))}
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>💬 Боты для знакомств и общения</h2>
+      <div class="grid">
+        {datingBots.map((bot) => (
+          <BotCard {...bot} />
+        ))}
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🩺 Боты для здоровья</h2>
+      <div class="grid">
+        {healthBots.map((bot) => (
+          <BotCard {...bot} />
+        ))}
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🎨 Боты для стикеров</h2>
+      <div class="grid">
+        {stickerBots.map((bot) => (
+          <BotCard {...bot} />
+        ))}
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>📸 Боты для фото и видео</h2>
+      <div class="grid">
+        {mediaBots.map((bot) => (
+          <BotCard {...bot} />
+        ))}
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>👥 Боты для чатов</h2>
+      <div class="grid">
+        {chatBots.map((bot) => (
+          <BotCard {...bot} />
+        ))}
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🎉 Развлекательные боты</h2>
+      <div class="grid">
+        {entertainmentBots.map((bot) => (
+          <BotCard {...bot} />
+        ))}
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🎮 Игры</h2>
+      <div class="grid">
+        {gameBots.map((bot) => (
+          <BotCard {...bot} />
+        ))}
+      </div>
+    </section>
+
+    <section class="section info-section">
+      <h2>🤖 Что такое боты для Телеграма?</h2>
+      <div class="info-content">
+        <p>
+          Боты для Телеграма — это специальные аккаунты, которые работают на основе программного обеспечения и могут выполнять различные задачи автоматически. Они могут помогать в управлении чатами, предоставлять информацию, развлекать, обучать и многое другое.
+        </p>
+        <p>
+          Основные преимущества использования ботов в Telegram:
+        </p>
+        <ul>
+          <li>Автоматизация рутинных задач</li>
+          <li>Быстрый доступ к информации и сервисам</li>
+          <li>Возможность управления группами и каналами</li>
+          <li>Интеграция с внешними сервисами</li>
+          <li>Развлекательные функции и игры</li>
+        </ul>
+        <p>
+          Чтобы начать использовать бота, достаточно найти его по имени пользователя (@username) или перейти по прямой ссылке. После этого нажмите кнопку "Start" или отправьте команду /start, чтобы активировать бота.
+        </p>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .info-section {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+  }
+
+  .info-content {
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .info-content p {
+    margin-bottom: 1.5rem;
+  }
+
+  .info-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .info-content li {
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .info-section {
+      padding: 1.5rem;
+    }
+  }
+</style>

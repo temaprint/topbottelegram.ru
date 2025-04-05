@@ -1,0 +1,143 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const publishDate = new Date('2024-01-10');
+---
+
+<Layout title="Топ-10 ботов для администрирования групп | Каталог Telegram-ботов">
+  <Header />
+  <div class="container">
+    <article class="article">
+      <header class="article-header">
+        <h1>Топ-10 ботов для администрирования групп</h1>
+        <time datetime={publishDate.toISOString()}>
+          {publishDate.toLocaleDateString('ru-RU', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          })}
+        </time>
+      </header>
+
+      <div class="article-content">
+        <p>
+          Администрирование групп в Telegram может быть непростой задачей. К счастью, существуют боты, которые помогают автоматизировать многие процессы и сделать управление группой более эффективным.
+        </p>
+
+        <h2>1. Group Help</h2>
+        <p>
+          Многофункциональный бот для модерации с возможностью настройки правил, автоматической проверкой новых участников и системой предупреждений.
+        </p>
+
+        <h2>2. DeFensy</h2>
+        <p>
+          Специализируется на защите от спама и рекламы. Использует AI для определения нежелательного контента.
+        </p>
+
+        <h2>3. Combot</h2>
+        <p>
+          Предоставляет подробную статистику активности группы и инструменты модерации.
+        </p>
+
+        <h2>4. MissRose Bot</h2>
+        <p>
+          Популярный бот с широким набором команд для управления группой и системой приветствий.
+        </p>
+
+        <h2>5. Ban Bot</h2>
+        <p>
+          Простой но эффективный бот для быстрой модерации с возможностью голосования за бан участников.
+        </p>
+
+        <h2>6. Group Butler</h2>
+        <p>
+          Многоязычный бот с гибкими настройками правил и системой антиспама.
+        </p>
+
+        <h2>7. WatchDog</h2>
+        <p>
+          Специализируется на обнаружении и блокировке вредоносных ссылок и файлов.
+        </p>
+
+        <h2>8. Spam Shield</h2>
+        <p>
+          Защищает группу от спам-атак и массовых рассылок.
+        </p>
+
+        <h2>9. Welcome Bot</h2>
+        <p>
+          Автоматизирует процесс приветствия новых участников и проверки на ботов.
+        </p>
+
+        <h2>10. Stats Bot</h2>
+        <p>
+          Предоставляет детальную аналитику по активности участников и популярности контента.
+        </p>
+
+        <h2>Заключение</h2>
+        <p>
+          Выбор конкретного бота зависит от потребностей вашей группы. Рекомендуется использовать комбинацию из нескольких ботов для максимальной эффективности управления.
+        </p>
+      </div>
+    </article>
+  </div>
+</Layout>
+
+<style>
+  .article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .article-header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .article-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .article-header time {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+  }
+
+  .article-content {
+    line-height: 1.8;
+    color: var(--text-primary);
+  }
+
+  .article-content h2 {
+    margin: 2rem 0 1rem;
+    font-size: 1.8rem;
+    color: var(--text-primary);
+  }
+
+  .article-content p {
+    margin-bottom: 1.5rem;
+  }
+
+  .article-content ul,
+  .article-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .article-content li {
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .article-header h1 {
+      font-size: 2rem;
+    }
+
+    .article-content h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>

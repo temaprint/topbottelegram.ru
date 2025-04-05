@@ -1,0 +1,40 @@
+{
+  "gameBots": [
+    {
+      "emoji": "🏕",
+      "name": "Бесконечное лето",
+      "link": "https://t.me/EverlastingSummerBot",
+      "description": "Визуальная новелла в виде бота."
+    },
+    {
+      "emoji": "📱",
+      "name": "Привет, незнакомец!",
+      "link": "https://t.me/QuestGameBot",
+      "description": "Мистический текстовый квест."
+    },
+    {
+      "emoji": "🧠",
+      "name": "ЧГК",
+      "link": "https://t.me/chgk_bot",
+      "description": "Вопросы для игры «Что? Где? Когда?»."
+    },
+    {
+      "emoji": "🌆",
+      "name": "Wasteland Wars",
+      "link": "https://t.me/WastelandWarsBot",
+      "description": "MMORPG через Telegram. Прокачка, фракции, бои."
+    },
+    {
+      "emoji": "🐸",
+      "name": "Жабабот",
+      "link": "https://t.me/toadbot",
+      "description": "Игра с жабами: кланы, подземелья, прокачка."
+    },
+    {
+      "emoji": "⭕",
+      "name": "Крестики-нолики",
+      "link": "https://t.me/igrun_tg_bot",
+      "description": "Онлайн игра с рейтингом."
+    }
+  ]
+}

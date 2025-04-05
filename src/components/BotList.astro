@@ -1,0 +1,81 @@
+---
+interface Bot {
+  emoji: string;
+  name: string;
+  link: string;
+  description: string;
+}
+
+interface Props {
+  bots: Bot[];
+}
+
+const { bots } = Astro.props;
+---
+
+<div class="bot-list">
+  {
+    bots.map((bot, index) => (
+      <div class="bot-item">
+        <span class="number">{index + 1}.</span>
+        <span class="emoji">{bot.emoji}</span>
+        <a href={bot.link} target="_blank" rel="noopener noreferrer" class="name">
+          {bot.name}
+        </a>
+        <span class="description">— {bot.description}</span>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .bot-list {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+
+  .bot-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    color: var(--text-primary);
+    line-height: 1.5;
+  }
+
+  .number {
+    color: var(--text-secondary);
+    min-width: 2rem;
+  }
+
+  .emoji {
+    min-width: 1.5rem;
+  }
+
+  .name {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .name:hover {
+    color: var(--accent-light);
+    text-decoration: underline;
+  }
+
+  .description {
+    color: var(--text-secondary);
+  }
+
+  @media (max-width: 768px) {
+    .bot-item {
+      flex-wrap: wrap;
+    }
+
+    .description {
+      width: 100%;
+      margin-left: 4rem;
+    }
+  }
+</style>

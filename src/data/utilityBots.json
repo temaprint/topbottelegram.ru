@@ -1,0 +1,46 @@
+{
+  "utilityBots": [
+    {
+      "emoji": "🔍",
+      "name": "Searchee Bot",
+      "link": "https://t.me/SearcheeBot",
+      "description": "Поиск Telegram-каналов по теме, названию, популярности.",
+      "users": 397878
+    },
+    {
+      "emoji": "🎙",
+      "name": "SaluteSpeech Bot",
+      "link": "https://t.me/SaluteSpeechBot",
+      "description": "Расшифровывает голосовые, аудио- и видеосообщения.",
+      "users": 246224
+    },
+    {
+      "emoji": "🔄",
+      "name": "File Converter",
+      "link": "https://t.me/newfileconverterbot",
+      "description": "Конвертация изображений, аудио и видео в 14+ форматов.",
+      "users": 109711
+    },
+    {
+      "emoji": "⏰",
+      "name": "Skeddy",
+      "link": "https://t.me/SkeddyBot",
+      "description": "Напоминания и планировщик задач с пониманием естественного языка.",
+      "users": 15463
+    },
+    {
+      "emoji": "📸",
+      "name": "Imager",
+      "link": "https://t.me/siteshot_bot",
+      "description": "Скриншоты сайтов по ссылке.",
+      "users": 3685
+    },
+    {
+      "emoji": "💰",
+      "name": "Cointry",
+      "link": "https://t.me/cointry_bot",
+      "description": "Учет трат, доходов, статистика по категориям.",
+      "users": 1373
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+
+const articles = [
+  {
+    title: 'Как создать своего бота в Telegram',
+    description: 'Пошаговое руководство по созданию Telegram-бота с помощью BotFather',
+    date: '2024-01-15',
+    slug: 'how-to-create-telegram-bot'
+  },
+  {
+    title: 'Топ-10 ботов для администрирования групп',
+    description: 'Обзор лучших ботов для модерации и управления Telegram-чатами',
+    date: '2024-01-10',
+    slug: 'top-10-admin-bots'
+  },
+  {
+    title: 'Боты для бизнеса в Telegram',
+    description: 'Как использовать ботов для автоматизации бизнес-процессов',
+    date: '2024-01-05',
+    slug: 'business-bots'
+  }
+];
+---
+
+<Layout title="Статьи | Каталог Telegram-ботов">
+  <Header />
+  <div class="container">
+    <h1>📝 Статьи о Telegram-ботах</h1>
+    <div class="articles">
+      {articles.map(article => (
+        <article class="article-card">
+          <h2>{article.title}</h2>
+          <p>{article.description}</p>
+          <div class="article-meta">
+            <time datetime={article.date}>
+              {new Date(article.date).toLocaleDateString('ru-RU', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+              })}
+            </time>
+            <a href={`/articles/${article.slug}`} class="read-more">
+              Читать далее →
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .articles {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .article-card {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+  }
+
+  .article-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .article-card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .article-card p {
+    color: var(--text-secondary);
+    margin: 0 0 1.5rem 0;
+    line-height: 1.6;
+  }
+
+  .article-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+
+  .read-more {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .read-more:hover {
+    text-decoration: underline;
+  }
+</style>

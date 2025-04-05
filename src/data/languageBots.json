@@ -1,0 +1,24 @@
+{
+  "languageBots": [
+    {
+      "emoji": "🤖",
+      "name": "Andy English Bot",
+      "link": "https://t.me/AndyRobot",
+      "description": "Учим английский в диалоге с ботом.",
+      "users": 24214
+    },
+    {
+      "emoji": "🎙",
+      "name": "AI English Tutor by Skyeng",
+      "link": "https://t.me/Skyeng_AIBot",
+      "description": "Голосовая практика английского с ИИ.",
+      "users": 3200
+    },
+    {
+      "emoji": "🌐",
+      "name": "Yandex.Translate",
+      "link": "https://t.me/YTranslateBot",
+      "description": "Переводчик с поддержкой 12 языков. Можно добавить в чат."
+    }
+  ]
+}

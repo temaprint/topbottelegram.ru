@@ -1,0 +1,23 @@
+{
+  "healthBots": [
+    {
+      "emoji": "🤕",
+      "name": "Migrebot",
+      "link": "https://t.me/Migrebot",
+      "description": "Дневник головной боли, статистика для врача.",
+      "users": 70089
+    },
+    {
+      "emoji": "🌸",
+      "name": "Овобот",
+      "link": "https://t.me/theovobot",
+      "description": "Следит за циклом и фертильными днями."
+    },
+    {
+      "emoji": "🤰",
+      "name": "Мамабот",
+      "link": "https://t.me/mamabot",
+      "description": "Советы беременным по неделям."
+    }
+  ]
+}

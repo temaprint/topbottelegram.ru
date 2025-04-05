@@ -1,0 +1,161 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const publishDate = new Date('2024-01-05');
+---
+
+<Layout title="Боты для бизнеса в Telegram | Каталог Telegram-ботов">
+  <Header />
+  <div class="container">
+    <article class="article">
+      <header class="article-header">
+        <h1>Боты для бизнеса в Telegram</h1>
+        <time datetime={publishDate.toISOString()}>
+          {publishDate.toLocaleDateString('ru-RU', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          })}
+        </time>
+      </header>
+
+      <div class="article-content">
+        <p>
+          Telegram-боты становятся незаменимым инструментом для автоматизации бизнес-процессов. Рассмотрим основные сценарии использования ботов в бизнесе и как они могут помочь оптимизировать работу.
+        </p>
+
+        <h2>Клиентская поддержка</h2>
+        <p>
+          Боты могут:
+        </p>
+        <ul>
+          <li>Отвечать на часто задаваемые вопросы</li>
+          <li>Собирать обратную связь</li>
+          <li>Создавать тикеты поддержки</li>
+          <li>Перенаправлять сложные вопросы операторам</li>
+        </ul>
+
+        <h2>Продажи и заказы</h2>
+        <p>
+          Функции ботов для продаж:
+        </p>
+        <ul>
+          <li>Показ каталога товаров</li>
+          <li>Оформление заказов</li>
+          <li>Приём оплаты</li>
+          <li>Отслеживание доставки</li>
+          <li>Информирование о статусе заказа</li>
+        </ul>
+
+        <h2>Маркетинг и рассылки</h2>
+        <p>
+          Боты помогают в:
+        </p>
+        <ul>
+          <li>Сегментации аудитории</li>
+          <li>Проведении опросов</li>
+          <li>Организации рассылок</li>
+          <li>Сборе аналитики</li>
+        </ul>
+
+        <h2>Внутренние процессы</h2>
+        <p>
+          Автоматизация работы команды:
+        </p>
+        <ul>
+          <li>Постановка и контроль задач</li>
+          <li>Учёт рабочего времени</li>
+          <li>Согласование документов</li>
+          <li>Организация встреч</li>
+        </ul>
+
+        <h2>Интеграции</h2>
+        <p>
+          Боты могут интегрироваться с:
+        </p>
+        <ul>
+          <li>CRM-системами</li>
+          <li>Платёжными системами</li>
+          <li>Службами доставки</li>
+          <li>Системами аналитики</li>
+        </ul>
+
+        <h2>Советы по внедрению</h2>
+        <p>
+          При внедрении ботов важно:
+        </p>
+        <ul>
+          <li>Определить конкретные бизнес-задачи</li>
+          <li>Начать с простых сценариев</li>
+          <li>Тестировать на малой группе пользователей</li>
+          <li>Собирать обратную связь</li>
+          <li>Постепенно расширять функционал</li>
+        </ul>
+
+        <h2>Заключение</h2>
+        <p>
+          Telegram-боты — это эффективный инструмент автоматизации бизнес-процессов, который помогает сократить издержки и улучшить качество обслуживания клиентов. При правильном подходе к внедрению, боты могут значительно повысить эффективность работы компании.
+        </p>
+      </div>
+    </article>
+  </div>
+</Layout>
+
+<style>
+  .article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .article-header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .article-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .article-header time {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+  }
+
+  .article-content {
+    line-height: 1.8;
+    color: var(--text-primary);
+  }
+
+  .article-content h2 {
+    margin: 2rem 0 1rem;
+    font-size: 1.8rem;
+    color: var(--text-primary);
+  }
+
+  .article-content p {
+    margin-bottom: 1.5rem;
+  }
+
+  .article-content ul,
+  .article-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .article-content li {
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .article-header h1 {
+      font-size: 2rem;
+    }
+
+    .article-content h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,22 @@
+{
+  "stickerBots": [
+    {
+      "emoji": "🎨",
+      "name": "Stickers Bot",
+      "link": "https://t.me/Stickers",
+      "description": "Официальный бот Telegram для создания стикеров."
+    },
+    {
+      "emoji": "📌",
+      "name": "Favorite Stickers Bot",
+      "link": "https://t.me/fStikBot",
+      "description": "Создаёт стикерпак из любимых стикеров."
+    },
+    {
+      "emoji": "💬",
+      "name": "QuotLy",
+      "link": "https://t.me/QuotLyBot",
+      "description": "Превращает сообщения в стикеры-цитаты."
+    }
+  ]
+}

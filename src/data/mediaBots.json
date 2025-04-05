@@ -1,0 +1,40 @@
+{
+  "mediaBots": [
+    {
+      "emoji": "🎞",
+      "name": "Video to GIF Converter",
+      "link": "https://t.me/vgifbot",
+      "description": "Преобразует видео в гифки."
+    },
+    {
+      "emoji": "📥",
+      "name": "Video Downloader",
+      "link": "https://t.me/MagicSaverBot",
+      "description": "Сохраняет видео с TikTok и YouTube."
+    },
+    {
+      "emoji": "🧠",
+      "name": "DeepFaker Bot",
+      "link": "https://t.me/DeepFakerBot",
+      "description": "Генерирует дипфейк-видео."
+    },
+    {
+      "emoji": "🎭",
+      "name": "face2comics",
+      "link": "https://t.me/face2comicsbot",
+      "description": "Превращает фото в комиксы."
+    },
+    {
+      "emoji": "🖼",
+      "name": "ruDALL-E Malevich",
+      "link": "https://t.me/sber_rudalle_xl_bot",
+      "description": "Создание картинок по тексту на русском."
+    },
+    {
+      "emoji": "💫",
+      "name": "Distortion Bot",
+      "link": "https://t.me/DistortBot",
+      "description": "Искажает фото, гифки, видео и звук."
+    }
+  ]
+}

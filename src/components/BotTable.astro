@@ -1,0 +1,38 @@
+---
+interface Bot {
+  emoji: string;
+  name: string;
+  link: string;
+  description: string;
+}
+
+interface Props {
+  bots: Bot[];
+}
+
+const { bots } = Astro.props;
+---
+
+<table>
+  <thead>
+    <tr>
+      <th>Бот</th>
+      <th>Описание</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      bots.map((bot) => (
+        <tr>
+          <td>
+            <span class="emoji">{bot.emoji}</span>
+            <a href={bot.link} target="_blank" rel="noopener noreferrer">
+              {bot.name}
+            </a>
+          </td>
+          <td>{bot.description}</td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>

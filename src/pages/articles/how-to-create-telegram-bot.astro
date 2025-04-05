@@ -1,0 +1,132 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const publishDate = new Date('2024-01-15');
+---
+
+<Layout title="Как создать своего бота в Telegram | Каталог Telegram-ботов">
+  <Header />
+  <div class="container">
+    <article class="article">
+      <header class="article-header">
+        <h1>Как создать своего бота в Telegram</h1>
+        <time datetime={publishDate.toISOString()}>
+          {publishDate.toLocaleDateString('ru-RU', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          })}
+        </time>
+      </header>
+
+      <div class="article-content">
+        <h2>Шаг 1: Создание бота через BotFather</h2>
+        <p>
+          BotFather — это официальный бот Telegram для создания других ботов. Вот как создать своего бота:
+        </p>
+        <ol>
+          <li>Найдите @BotFather в Telegram или перейдите по ссылке t.me/botfather</li>
+          <li>Отправьте команду /newbot</li>
+          <li>Укажите имя бота (оно будет отображаться в контактах)</li>
+          <li>Придумайте username для бота (должен заканчиваться на 'bot')</li>
+        </ol>
+
+        <h2>Шаг 2: Получение токена</h2>
+        <p>
+          После создания бота BotFather выдаст вам токен — строку вида 123456789:ABCdefGHIjklmNOPQrstUVwxyz. Сохраните его в надёжном месте и никому не передавайте.
+        </p>
+
+        <h2>Шаг 3: Настройка бота</h2>
+        <p>
+          Используйте следующие команды BotFather для настройки бота:
+        </p>
+        <ul>
+          <li>/setdescription — установить описание бота</li>
+          <li>/setabouttext — добавить краткую информацию о боте</li>
+          <li>/setuserpic — установить аватар бота</li>
+          <li>/setcommands — добавить список команд с описаниями</li>
+        </ul>
+
+        <h2>Шаг 4: Программирование бота</h2>
+        <p>
+          Для создания функционала бота можно использовать различные библиотеки:
+        </p>
+        <ul>
+          <li>node-telegram-bot-api — для Node.js</li>
+          <li>python-telegram-bot — для Python</li>
+          <li>TelegramBots — для Java</li>
+        </ul>
+
+        <h2>Шаг 5: Хостинг бота</h2>
+        <p>
+          Чтобы бот работал постоянно, его нужно разместить на хостинге. Варианты:
+        </p>
+        <ul>
+          <li>Heroku</li>
+          <li>DigitalOcean</li>
+          <li>Amazon AWS</li>
+          <li>Google Cloud Platform</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</Layout>
+
+<style>
+  .article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .article-header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .article-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .article-header time {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+  }
+
+  .article-content {
+    line-height: 1.8;
+    color: var(--text-primary);
+  }
+
+  .article-content h2 {
+    margin: 2rem 0 1rem;
+    font-size: 1.8rem;
+    color: var(--text-primary);
+  }
+
+  .article-content p {
+    margin-bottom: 1.5rem;
+  }
+
+  .article-content ul,
+  .article-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .article-content li {
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .article-header h1 {
+      font-size: 2rem;
+    }
+
+    .article-content h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>

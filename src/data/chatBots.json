@@ -1,0 +1,44 @@
+{
+  "chatBots": [
+    {
+      "emoji": "🕵️",
+      "name": "True Mafia",
+      "link": "https://t.me/TrueMafiaBot",
+      "description": "Игра в «Мафию» прямо в Telegram-чате.",
+      "users": 1471531
+    },
+    {
+      "emoji": "🚫",
+      "name": "DeFensy",
+      "link": "https://t.me/DeFensyBot",
+      "description": "Защита чатов от спама, ссылок, флуда и накрутки.",
+      "users": 137757
+    },
+    {
+      "emoji": "🚫",
+      "name": "Banof",
+      "link": "https://t.me/banofbot",
+      "description": "Голосование за кик участника чата.",
+      "users": 77030
+    },
+    {
+      "emoji": "📊",
+      "name": "TGStat Bot",
+      "link": "https://t.me/TGStat_Bot",
+      "description": "Аналитика по каналам и постам Telegram.",
+      "users": 61507
+    },
+    {
+      "emoji": "📊",
+      "name": "Combot",
+      "link": "https://t.me/combot",
+      "description": "Аналитика чата: активность, рейтинги и другое."
+    },
+    {
+      "emoji": "🖼",
+      "name": "Мемезис",
+      "link": "https://t.me/memezisBot",
+      "description": "Находит мемы по описанию. Работает через упоминание."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "officialBots": [
+    {
+      "emoji": "📧",
+      "name": "Gmail Bot",
+      "link": "https://t.me/GmailBot",
+      "description": "Официальный почтовый клиент Google. Позволяет читать письма и отвечать прямо в Telegram.",
+      "users": 40062
+    },
+    {
+      "emoji": "🛡",
+      "name": "Dr.Web",
+      "link": "https://t.me/DrWebBot",
+      "description": "Проверяет файлы на вирусы. Можно использовать в чатах.",
+      "users": 23233
+    },
+    {
+      "emoji": "📦",
+      "name": "Служба доставки «СДЭК»",
+      "link": "https://t.me/edostavkabot",
+      "description": "Отслеживает заказы, позволяет менять адрес и время доставки."
+    }
+  ]
+}

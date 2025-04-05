@@ -1,0 +1,144 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import BotTable from '../components/BotTable.astro';
+
+import chatBotsData from '../data/chatBots.json';
+import utilityBotsData from '../data/utilityBots.json';
+import languageBotsData from '../data/languageBots.json';
+import datingBotsData from '../data/datingBots.json';
+import healthBotsData from '../data/healthBots.json';
+import stickerBotsData from '../data/stickerBots.json';
+import mediaBotsData from '../data/mediaBots.json';
+import entertainmentBotsData from '../data/entertainmentBots.json';
+import gameBotsData from '../data/gameBots.json';
+import officialBotsData from '../data/officialBots.json';
+
+const { chatBots } = chatBotsData;
+const { utilityBots } = utilityBotsData;
+const { languageBots } = languageBotsData;
+const { datingBots } = datingBotsData;
+const { healthBots } = healthBotsData;
+const { stickerBots } = stickerBotsData;
+const { mediaBots } = mediaBotsData;
+const { entertainmentBots } = entertainmentBotsData;
+const { gameBots } = gameBotsData;
+const { officialBots } = officialBotsData;
+---
+
+<Layout title="Каталог | TG Bots">
+  <Header />
+  <div class="container">
+    <h1>📑 Каталог ботов</h1>
+
+    <div class="catalog">
+      <section class="category">
+        <h2>👥 Боты для чатов</h2>
+        <BotTable bots={chatBots} />
+      </section>
+
+      <section class="category">
+        <h2>🛠 Утилиты</h2>
+        <BotTable bots={utilityBots} />
+      </section>
+
+      <section class="category">
+        <h2>🌍 Изучение языков</h2>
+        <BotTable bots={languageBots} />
+      </section>
+
+      <section class="category">
+        <h2>💘 Знакомства</h2>
+        <BotTable bots={datingBots} />
+      </section>
+
+      <section class="category">
+        <h2>🏥 Здоровье</h2>
+        <BotTable bots={healthBots} />
+      </section>
+
+      <section class="category">
+        <h2>🎨 Стикеры</h2>
+        <BotTable bots={stickerBots} />
+      </section>
+
+      <section class="category">
+        <h2>📸 Медиа</h2>
+        <BotTable bots={mediaBots} />
+      </section>
+
+      <section class="category">
+        <h2>🎮 Игры и развлечения</h2>
+        <BotTable bots={[...gameBots, ...entertainmentBots]} />
+      </section>
+
+      <section class="category">
+        <h2>📧 Официальные боты</h2>
+        <BotTable bots={officialBots} />
+      </section>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .catalog {
+    margin: 2rem 0;
+  }
+
+  .category {
+    margin-bottom: 3rem;
+  }
+
+  .category h2 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--bg-secondary);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  th {
+    text-align: left;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+  }
+
+  td {
+    padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  td a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-left: 0.5rem;
+  }
+
+  td a:hover {
+    color: var(--accent-light);
+    text-decoration: underline;
+  }
+
+  .emoji {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+
+    th, td {
+      white-space: nowrap;
+    }
+  }
+</style>

@@ -1,0 +1,22 @@
+{
+  "datingBots": [
+    {
+      "emoji": "💘",
+      "name": "Леонардо Дайвинчик",
+      "link": "https://t.me/leomatchbot",
+      "description": "Анкеты и лайки. Популярный бот знакомств в рунете."
+    },
+    {
+      "emoji": "🎭",
+      "name": "Анонимный чат Телеграма",
+      "link": "https://t.me/AnonRuBot",
+      "description": "Случайные собеседники и фильтр по интересам."
+    },
+    {
+      "emoji": "🎧",
+      "name": "Voices of Strangers",
+      "link": "https://t.me/VoicesOfStrangers_bot",
+      "description": "Слушай голосовушки от незнакомцев. Нужно отправить своё."
+    }
+  ]
+}

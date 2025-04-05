@@ -1,0 +1,77 @@
+---
+interface Props {
+  emoji: string;
+  name: string;
+  link: string;
+  description: string;
+  users?: number;
+}
+
+const { emoji, name, link, description, users } = Astro.props;
+---
+
+<a href={link} target="_blank" rel="noopener noreferrer" class="card">
+  <div class="emoji">{emoji}</div>
+  <div class="content">
+    <h3>{name}</h3>
+    <p>{description}</p>
+    {users && (
+      <div class="users">
+        <span>👥 {new Intl.NumberFormat('ru-RU').format(users)} пользователей</span>
+      </div>
+    )}
+  </div>
+</a>
+
+<style>
+  .card {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .emoji {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+  }
+
+  p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .users {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+</style>
